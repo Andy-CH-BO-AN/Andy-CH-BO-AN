@@ -17,33 +17,33 @@
 
 ## 🚀 Featured Projects
 
-### 🤖 [AI-Assisted Self-Healing Playwright E2E Suite](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests)
+### 🤖 [AI 輔助自癒 Playwright E2E 測試系統](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests)
 
-A Playwright E2E maintenance system that detects locator drift in scheduled CI, gathers failure evidence, asks Gemini for scoped repair proposals, validates them deterministically, runs full regression, and opens a **Draft PR for human review**.
+這是一套用來降低 UI 自動化維護成本的 Playwright E2E 自癒系統。當排程 CI 因 locator drift 失敗時，系統會自動收集失敗證據、找出相關 Page Object，交由 Gemini 產生範圍受限的修復建議，再經過 deterministic safety validation 與完整 regression 驗證，最後開出 **Draft PR 交由人工 review**。
 
 ```text
 Scheduled E2E failure
         ↓
 JSON / DOM / test evidence
         ↓
-AST + traceback Page Object discovery
+AST + traceback 找出相關 Page Object
         ↓
 Gemini structured repair proposal
         ↓
 mechanical safety validation
         ↓
-full Docker E2E regression
+完整 Docker E2E regression
         ↓
 Draft PR → human review
 ```
 
-Key engineering decisions:
+主要工程設計：
 
-- AI can only propose changes inside `pages/**/*.py`
-- exact literal replacement and static checks prevent unsafe patches
-- up to 3 repair rounds capture fresh evidence after each regression run
-- partial successful repairs can be preserved as a human handoff
-- GitHub Actions orchestrates nightly monitoring, self-healing, regression, and PR publication
+- AI 只能提議修改 `pages/**/*.py`，限制修復範圍
+- 使用 exact literal replacement 與 static checks 阻擋不安全 patch
+- 最多進行 3 輪修復，每輪 regression 失敗後重新蒐集最新 evidence
+- 前段已成功的修復可以保留，透過 Partial Repair 交由工程師接手
+- GitHub Actions 串起 nightly monitoring、self-healing、regression 與 Draft PR publication
 
 **Stack:** Python · Playwright · Pytest · pytest-xdist · Gemini · Pydantic · Ruff · Docker · GitHub Actions
 
