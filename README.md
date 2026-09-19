@@ -57,6 +57,16 @@ Garmin activity data → deterministic preprocessing → AI coaching → Postgre
 
 ---
 
+### ⚔️ [SagaBurst 3D Game](https://github.com/Andy-CH-BO-AN/SagaBurst-3D-Game)
+
+以 **Three.js + TypeScript** 開發的瀏覽器 3D 戰鬥 / Action RPG prototype，支援 Viking 與 Roman 陣營、步兵 / 弓兵 / 騎兵 / 騎射兵、玩家裝備與騎乘戰鬥，以及最高 **100 vs 100 AI 大型戰場**。
+
+除了 gameplay 本身，也把大型戰鬥當成效能工程題目處理：建立可重現的 profiling scenarios 與 runtime profiler，量測 FPS、CPU frame work、NPC update、collision、renderer submit、draw calls、triangles 與 LOD，持續定位並優化大型場景瓶頸。
+
+**Stack:** TypeScript · Three.js · Vite · Vitest · Playwright · WebGL
+
+---
+
 ### 🧪 [Stylish Automation Test Framework](https://github.com/Andy-CH-BO-AN/Automation-Test-Project-Stylish)
 
 完整的 Pytest automation project，整合：
