@@ -59,9 +59,11 @@ Garmin activity data → deterministic preprocessing → AI coaching → Postgre
 
 ### ⚔️ [SagaBurst 3D Game](https://github.com/Andy-CH-BO-AN/SagaBurst-3D-Game)
 
-想自己開一場 **100 vs 100 的大型戰場**嗎？SagaBurst 是我做的瀏覽器 3D 戰鬥遊戲，可以自由配置 Viking / Roman 雙方兵力，搭配步兵、弓兵、騎兵與騎射兵，直接看兩支軍隊在戰場上開打。
+**SagaBurst** 是我開發的 Viking vs Roman **3D 動作與戰術指揮遊戲**，支援瀏覽器及 Windows / macOS 桌面版。玩家可以自訂最高 **200 vs 200 AI 大型戰場**，配置步兵、弓兵、標槍兵、騎兵與騎射兵，親自上陣、指揮列陣與衝鋒，或切換觀戰模式欣賞 AI 軍隊交戰。
 
-除了軍隊規模，也可以切換 **列陣戰 / 散兵戰**、選擇玩家陣營、武器與裝備，決定要騎馬衝進戰場，還是直接進觀戰模式看 AI 大亂鬥。歡迎 clone 下來玩玩看，自己配一場想看的戰役 😆
+除了 **Custom Battle**，還有 **Training Ground**、Roman / Viking 各九關的 **Defense Campaign**，以及可持續存檔的 **Career Mode**：從 Recruit 一路晉升 Commander，累積軍功、升級技能與裝備、招募私人部隊，指揮守城、攻城與各種軍事任務。坐騎包含馬、黑貓、柯基，還能騎乘巨鷹 **xongkoro** 在空中作戰。
+
+**Play:** [Browser](https://andy-ch-bo-an.github.io/SagaBurst-3D-Game/) · [Windows / macOS Downloads](https://github.com/Andy-CH-BO-AN/SagaBurst-3D-Game/releases/latest)
 
 **Stack:** TypeScript · Three.js · Vite · Vitest · Playwright · WebGL
 
