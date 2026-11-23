@@ -4,10 +4,6 @@
 
 我有 6 年以上軟體測試與自動化經驗，目前負責金融與數位資產產品的品質工程，涵蓋 Web、API、Mobile 的測試架構、CI 可靠性與上線風險評估。
 
-- **CI 可靠性**｜維護 Jenkins 測試流程，導入 Circuit Breaker 與 fail-fast，並區分產品缺陷、測試腳本、測試資料與環境問題，讓團隊能更快定位失敗。
-- **測試效能與可觀測性**｜建立測試報告與 Dashboard，追蹤執行時間、失敗與 flaky 趨勢，據此優化 API 連線重用、Android Emulator 執行方式與測試資料存取。
-- **產品可測試性**｜與 PM、RD 在開發前釐清驗收條件與失敗情境，和前端合作導入穩定的 Test ID，降低 UI 改版造成的維護成本。
-
 ## 精選測試專案
 
 ### [Playwright E2E 測試自癒](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests)
