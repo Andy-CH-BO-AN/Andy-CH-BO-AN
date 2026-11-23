@@ -2,7 +2,7 @@
 
 **Senior Software Development Engineer in Test (SDET) · Quality Engineering**
 
-我有 6 年以上軟體測試與自動化經驗，目前負責金融與數位資產產品的品質工程，涵蓋 Web、API、Mobile 的測試架構、CI 可靠性與上線風險評估。
+我有 6 年以上軟體測試與自動化經驗。
 
 ## 精選測試專案
 
