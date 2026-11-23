@@ -1,18 +1,20 @@
 # Hi, I'm Andy 👋
 
-**Senior Software Development Engineer in Test (SDET) · Quality Engineering**
+**Senior Software Development Engineer in Test (SDET)**
 
-我有 6 年以上軟體測試與自動化經驗。
-
-## 精選測試專案
+## 測試自動化
 
 ### [Playwright E2E 測試自癒](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests)
 
-排程 CI 偵測到 UI locator drift 後，系統收集失敗證據、定位相關 Page Object，再由 Gemini 提議修正。程式限制修改範圍並驗證 patch，接著在 Docker 跑完整 E2E 回歸。修正以 Draft PR 交由工程師審查。 [看實際修復案例 #36](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests/pull/36)
+排程測試因 UI locator 變動而失敗時，Gemini 根據失敗證據提出修正。系統只允許修改 Page Object，並在 Docker 跑完整 E2E 回歸，再開 Draft PR 供人工審查。
 
-### [Appium Android E2E 與自癒基礎](https://github.com/Andy-CH-BO-AN/appium-agentic-self-healing-tests)
+[看實際修復 PR #36](https://github.com/Andy-CH-BO-AN/playwright-self-healing-tests/pull/36)
 
-以 Appium、UiAutomator2 與 pytest 在 Android Emulator 上驗證商品詳情、購物車與結帳流程。測試失敗時會保留截圖、UI hierarchy 與結構化錯誤資訊，區分 locator timeout 與 assertion failure。下一步是用這些證據做 AI 輔助診斷。
+### [Appium Android E2E 測試](https://github.com/Andy-CH-BO-AN/appium-agentic-self-healing-tests)
+
+用 Appium 和 pytest 在 Android Emulator 上測試商品詳情、購物車與結帳。測試失敗時會自動收集截圖、UI hierarchy 和結構化錯誤資訊。
+
+[看 Android E2E 測試案例](https://github.com/Andy-CH-BO-AN/appium-agentic-self-healing-tests/tree/main/tests/e2e)
 
 ## 其他作品
 
@@ -24,4 +26,4 @@
 
 ### [AI Running Coach](https://github.com/Andy-CH-BO-AN/AI-running-coach)
 
-把 Garmin 活動資料整理成可追溯的訓練指標，由 Gemini 解讀近期訓練並產生建議。支援 GitHub Actions 排程、PostgreSQL／Neon 資料儲存、Dashboard 與 LINE 通知。
+用 Python 計算 Garmin 活動的訓練量與強度，再由 Gemini 解讀並提供建議。可以在 Dashboard 查看訓練回顧，也能透過 LINE 接收通知。
